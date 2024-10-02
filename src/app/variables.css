@@ -1,0 +1,9 @@
+:root {
+    --fontsize: 16px;
+    --background:  #F4F4F4;
+    --foreground:  #010101;
+    --primary: #E63036;
+      /* Ho notato che vengono utilizzate due variazioni di rosso su Figma */
+    --primaryLight: #FF2C33; 
+  }
+  
