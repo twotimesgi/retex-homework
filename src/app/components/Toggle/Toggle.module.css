@@ -1,0 +1,22 @@
+.toggle{
+   display: flex;
+   gap: 0.125rem;
+   align-items: center;
+   flex-grow: 0;
+   flex-shrink: 0;
+}
+
+.toggle button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 0.25rem;
+}
+
+.toggle button.selected{
+    box-shadow: -2px 2px 0px 0px #000000;  
+    border: 1px solid #000;
+
+}
