@@ -1,0 +1,19 @@
+.authorImage{
+    border-radius: 100%;
+}
+
+.authorImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.large{
+    width: 5.25rem;
+    height:  5.25rem;
+}
+
+.small{
+    width: 3rem;
+    height: 3rem;
+}
