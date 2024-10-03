@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Anybody, Raleway } from 'next/font/google'
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 const anybody = Anybody({ subsets: ['latin'], weight: ["700","400"] })
 const raleway = Raleway({ subsets: ['latin'], weight: ["700"], variable: "--raleway"})
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={`${anybody.className} ${raleway.variable}`}>
       <Header/>
       {children}
+      <Footer/>
       </body>
     </html>
   );
