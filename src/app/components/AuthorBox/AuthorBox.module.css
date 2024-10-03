@@ -1,0 +1,26 @@
+.authorBox {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .dataBox {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .authorName {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+  
+  .date{
+  font-size: 0.625rem;
+  font-weight: 400;
+  line-height: 1rem;
+  }
+  
+  .vertical{
+      flex-direction: column;
+  }
