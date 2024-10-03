@@ -1,0 +1,25 @@
+
+.tag{
+    text-transform: uppercase;
+    font-family: var(--raleway);
+    font-size: 0.625rem;
+    font-weight: 700;
+    border-radius: 0.25rem;
+    display: flex;
+    width: max-content;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.small{
+    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+}
+
+.large{
+    padding: 0.75rem 1rem 0.75rem 1rem;
+}
+
+.shadow{
+    box-shadow: -2px 2px 0px 0px #000000;
+    border: 1px solid #000000;
+}
