@@ -1,9 +1,9 @@
 import Tag from "./Tag/Tag";
-import SponsoredIcon from "../public/icons/sponsored.svg"
+import SponsoredIcon from "../public/ui/sponsored.svg"
 
 function SponsoredTag() {
   return (
-    <Tag size="small" icon={SponsoredIcon} shadow={false}>Sponsored</Tag>
+    <Tag size="small" icon={SponsoredIcon} textColor="var(--primary)" shadow={false}>Sponsored</Tag>
   )
 }
 

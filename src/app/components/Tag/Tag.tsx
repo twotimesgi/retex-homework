@@ -6,11 +6,13 @@ import Image, { StaticImageData } from 'next/image';
 type RGB = `rgb(${number}, ${number}, ${number})`;
 type RGBA = `rgba(${number}, ${number}, ${number}, ${number})`;
 type HEX = `#${string}`;
+type VAR = `var(--${string})`
 
 
 interface TagProps{
     size: "small" | "large",
-    color?: RGB | RGBA | HEX | "transparent",
+    color?: RGB | RGBA | HEX | VAR | "transparent",
+    textColor?: RGB | RGBA | HEX | VAR | "transparent",
     className?: string,
     children: string,
     icon?: StaticImageData,
@@ -18,9 +20,9 @@ interface TagProps{
     /* Ho notato due parametri addizionali (tag, icon) su Figma... */
 }
 
-function Tag({size, color="transparent", className, children, icon, shadow=true} : TagProps) {
+function Tag({size, color="transparent", textColor="#000", className, children, icon, shadow=true} : TagProps) {
   return (
-    <span style={{backgroundColor: color}} className={
+    <span style={{backgroundColor: color, color: textColor}} className={
       classNames(
         styles.tag,
         className,
