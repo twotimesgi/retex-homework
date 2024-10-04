@@ -1,0 +1,16 @@
+.cta{
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.ctaText{
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 0.905625rem;
+}
+
+.ctaArrow{
+    width: 1.25rem;
+    height: 1.25rem;
+}
