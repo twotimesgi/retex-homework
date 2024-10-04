@@ -15,10 +15,10 @@ const Header = () => {
           <a href="#">Contribuisci</a>
           <a href="#">Abbonati</a>
         </div>
-        <div className={styles.login}>
+        <Link href="#" className={styles.login}>
           <Image src={UserIcon} alt="" />
           <span>Accedi</span>
-        </div>
+        </Link>
       </div>
       <div className={styles.middle}>
         {/* TODO: Implementare onClick menu e ricerca */}
