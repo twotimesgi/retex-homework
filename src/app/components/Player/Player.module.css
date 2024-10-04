@@ -1,0 +1,43 @@
+.player{
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 1rem;
+    height: 4rem;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.time{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+
+.actionBox{
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+}
+
+.actionBox img{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.timeSelectorBox{
+    width: 100%;
+    flex-grow: 1;
+    background-image: url( '../../public/icons/wave.svg');
+    height: 100%;
+}
