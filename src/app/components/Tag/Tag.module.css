@@ -9,6 +9,8 @@
     width: max-content;
     align-items: center;
     gap: 0.25rem;
+    box-shadow: -2px 2px 0px 0px #000000;
+    border: 1px solid #000000;
 }
 
 .small{
@@ -19,9 +21,10 @@
     padding: 0.75rem 1rem 0.75rem 1rem;
 }
 
-.shadow{
-    box-shadow: -2px 2px 0px 0px #000000;
-    border: 1px solid #000000;
+.noShadow{
+    box-shadow: none;
+    border: none;
+    padding-left: 0;
 }
 
 .tag:hover .text{

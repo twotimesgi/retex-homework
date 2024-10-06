@@ -32,7 +32,7 @@ function Tag({size, color="transparent", textColor="#000", className, children, 
         styles.tag,
         className,
         {[styles.noHoverEffect]: !hoverEffect},
-       {[styles.shadow]: shadow},
+       {[styles.noShadow]: !shadow},
        {[styles.small]: size === "small"},
        {[styles.large]: size === "large"}
         )
