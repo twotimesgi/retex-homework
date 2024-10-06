@@ -23,6 +23,7 @@ interface ArticleProps {
   authorName: string;
   authorImage: StaticImageData;
   title: string;
+  padding?: "medium" | "large";
   date?: string;
   showCta?: boolean;
   minHeight?: string;
@@ -57,6 +58,7 @@ function Article({
   className,
   showCta=true,
   minHeight,
+  padding="large",
   alignment = "top-left",
 }: ArticleProps) {
   return (
@@ -67,7 +69,10 @@ function Article({
         { [styles.topLeft]: alignment == "top-left" },
         { [styles.bottomLeft]: alignment == "bottom-left" },
         { [styles.centerRight]: alignment == "center-right" },
-        { [styles.topRight]: alignment == "top-right" }
+        { [styles.topRight]: alignment == "top-right" },
+        { [styles.pMedium]: padding == "medium" },
+        { [styles.pLarge]: padding == "large" },
+
       )}
       style={{
         minHeight: minHeight ?? "unset",

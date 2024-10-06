@@ -2,8 +2,15 @@
     position: relative;
     background-size: cover;
     color: #fff;
-    padding: 3.5rem 2.5rem;
     display: flex;
+}
+
+.pLarge{
+    padding: 3.5rem 2.5rem;
+}
+
+.pMedium{
+    padding: 1.5625rem 2.5rem;
 }
 
 .filter{
