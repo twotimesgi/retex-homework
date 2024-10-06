@@ -34,6 +34,7 @@ interface ArticleProps {
   className?: string;
   alignment?: "top-left" | "bottom-left" | "top-right" | "center-right";
   contentMaxWidth?: string;
+  contentMinHeight?: string;
 }
 
 /* TODO: Aggiungere prop per gestire background-position e opacità del filtro*/
@@ -48,6 +49,7 @@ function Article({
   hasAudio = false,
   title,
   contentMaxWidth="100%",
+  contentMinHeight="100%",
   category,
   date,
   authorImage,
@@ -77,7 +79,8 @@ function Article({
     >
       {backgroundImage && <div className={styles.filter}></div>}
       <div className={styles.content} style={{
-        maxWidth: contentMaxWidth
+        maxWidth: contentMaxWidth,
+        minHeight: contentMinHeight
       }}>
         {/* importare colori da oggetto con tag e colori  */}
         <div>
