@@ -1,0 +1,29 @@
+.grid {
+    padding-top: 1px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px;
+    max-height: 52.8125rem;
+  }
+  
+  .mainArticle {
+    grid-row: 1 / -1;
+  }
+  
+  .topRightArticle,
+  .bottomRightArticle {
+    min-height: unset !important;
+  }
+  
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, minmax(300px, 1fr));
+      height: auto;
+    }
+  
+    .mainArticle {
+      grid-row: auto;
+    }
+  }
