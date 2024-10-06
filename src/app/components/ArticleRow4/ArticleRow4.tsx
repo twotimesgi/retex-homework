@@ -24,7 +24,7 @@ function ArticleRow4({ className }: ArticleRowProps) {
   return (
     <div className={classNames(styles.articleGrid, className)}>
       <Article className={styles.article} backgroundColor="#fff">
-        <Tag
+        <div className={styles.topBox}><Tag
           size="small"
           icon={SponsoredIcon}
           shadow={false}
@@ -35,6 +35,7 @@ function ArticleRow4({ className }: ArticleRowProps) {
         <Title htmlTag="h3" textColor="#000" size="medium">
           Sostenibilità sociale: accordo tra Dynamo Academy e Acsi
         </Title>
+        </div>
         <div className={styles.bottomBox}>
           <AuthorBox
             textColor="black"
