@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 1px;
+  padding-bottom: 1px;
+}
+
+.article, .articleWide {
+  min-height: 15.625rem;
+}
+
+.articleWide {
+  grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, minmax(15.625rem, 1fr));
+    height: auto;
+  }
+
+  .articleWide {
+    grid-column: span 1;
+  }
+}
