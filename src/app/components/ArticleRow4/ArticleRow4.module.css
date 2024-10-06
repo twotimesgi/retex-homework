@@ -21,3 +21,9 @@
     justify-content: flex-end;
     gap: 1.25rem;
 }
+
+.topBox{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem
+}

@@ -47,12 +47,13 @@ function ArticleRow4({ className }: ArticleRowProps) {
         </div>
       </Article>
       <Article className={styles.article} backgroundImage={ArticleImage}>
-        <Tag size="small" shadow={true} color="#F1DADA">
+      <div className={styles.topBox}><Tag size="small" shadow={true} color="#F1DADA">
           Persone
         </Tag>
         <Title htmlTag="h3" size="medium">
           Uccisa ad Haiti suor Luisa, era l'angelo dei bambini
         </Title>
+        </div>
         <div className={styles.bottomBox}><AuthorBox
           authorName="Francesco Palazzo"
           authorImage={AuthorImage}
@@ -62,12 +63,12 @@ function ArticleRow4({ className }: ArticleRowProps) {
         </div>
       </Article>
       <Article className={styles.article} backgroundColor="var(--primary)">
-        <Tag size="small" color="#fff">
+      <div className={styles.topBox}> <Tag size="small" color="#fff">
           Networking
         </Tag>
         <Title htmlTag="h3" size="medium">
           Il fundraising in rotta verso Giardini-Naxos
-        </Title>
+        </Title></div>
         <div className={styles.bottomBox}><AuthorBox
           authorName="Francesco Palazzo"
           authorImage={AuthorImage}
@@ -78,12 +79,13 @@ function ArticleRow4({ className }: ArticleRowProps) {
       </Article>
       <Article className={styles.article} backgroundImage={ArticleImage2}>
         {/* TODO import categories and match textColor */}
-        <Tag size="small" color="#E2F0F1">
+        <div className={styles.topBox}><Tag size="small" color="#E2F0F1">
           Società civile
         </Tag>
         <Title htmlTag="h3" size="medium">
           Lisa, il modello Croce Rossa per l'inclusione lavorativa
         </Title>
+        </div>
         <div className={styles.bottomBox}><AuthorBox
           authorName="Francesco Palazzo"
           authorImage={AuthorImage}

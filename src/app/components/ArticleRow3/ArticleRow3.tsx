@@ -25,12 +25,13 @@ function ArticleRow3({ className }: ArticleRowProps) {
   return (
     <div className={classNames(styles.articleGrid, className)}>
       <Article className={styles.article} backgroundColor="var(--primary)">
-      <Tag size="small" shadow={true} color="#FFF">
+      <div className={styles.topBox}><Tag size="small" shadow={true} color="#FFF">
          Progetto Arca
         </Tag>
         <Title htmlTag="h3" textColor="#fff" size="medium">
         “Qui Odessa”, fotografie, progetti e solidarietà
         </Title>
+        </div>
         <div className={styles.bottomBox}>
           <AuthorBox
             textColor="white"
@@ -42,12 +43,12 @@ function ArticleRow3({ className }: ArticleRowProps) {
         </div>
       </Article>
       <Article className={styles.article} backgroundImage={ArticleImage}>
-        <Tag size="small" shadow={true} color="#F0E2F1">
+      <div className={styles.topBox}> <Tag size="small" shadow={true} color="#F0E2F1">
           Economia Civile
         </Tag>
         <Title htmlTag="h3" size="medium">
           “Co-agitiamo”, Tiggiano una cooperativa di comunità contro lo spopolamento
-        </Title>
+        </Title></div>
         <div className={styles.bottomBox}><AuthorBox
           authorName="Emiliano Moccia"
           authorImage={AuthorImage}
@@ -57,12 +58,13 @@ function ArticleRow3({ className }: ArticleRowProps) {
         </div>
       </Article>
       <Article className={styles.article} backgroundImage={ArticleImage2}>
-        <Tag size="small" color="#E2f0f1">
+      <div className={styles.topBox}><Tag size="small" color="#E2f0f1">
           Adolescenti
         </Tag>
         <Title htmlTag="h3" size="medium">
         Storie fra ragazzi permeate di violenza. A Napoli 12enne sfregiata da 17enne
         </Title>
+        </div>
         <div className={styles.bottomBox}><AuthorBox
           authorName="Luca Cereda"
           authorImage={AuthorImage}
