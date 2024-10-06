@@ -36,7 +36,7 @@ function AuthorBox({
       />
       <div className={styles.dataBox}>
         <span className={styles.authorName}>{authorName}</span>
-        {date && <span className={styles.date}>{date}</span>}
+        {date && date != "" && <span className={styles.date}>{date}</span>}
       </div>
     </div>
   );
