@@ -7,6 +7,9 @@
 .ctaText{
     font-size: 0.875rem;
     font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     line-height: 0.905625rem;
 }
 
