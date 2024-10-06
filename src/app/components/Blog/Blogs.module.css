@@ -1,0 +1,45 @@
+.blogs{
+    display: flex;
+    background-color: #FFFFFF;
+}
+
+.blog{
+    flex-basis: calc(100%/6);
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    border-left: 1px solid #000;
+}
+
+.titleBox{
+    flex-basis: calc(100%/6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+    color: var(--primary);
+}
+
+.infoBox{
+    display: flex;
+    gap: 0.25rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.authorName{
+font-size: 0.875rem;
+font-weight: 400;
+line-height: 1.5rem;
+text-align: left;
+
+}
