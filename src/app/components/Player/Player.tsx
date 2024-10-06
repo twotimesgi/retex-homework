@@ -2,8 +2,8 @@
 import {useState} from "react";
 import styles from "./Player.module.css";
 import Image from "next/image";
-import PlayIcon from "../../public/icons/play.svg";
-import PauseIcon from "../../public/icons/pause.svg";
+import PlayIcon from "../../public/ui/play.svg";
+import PauseIcon from "../../public/ui/pause.svg";
 
 
 /* TODO: Valori harcodati da rimuovere*/

@@ -1,12 +1,9 @@
 .categories{
     display: flex;
     gap: 2rem;
-padding: 4rem 2.5rem 4rem 2.5rem;
-align-items: center;
-justify-content: space-between;
-
-
-
+    padding: 4rem 2.5rem 4rem 2.5rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .title{

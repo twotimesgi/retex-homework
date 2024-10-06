@@ -5,6 +5,7 @@
     gap: 1rem;
     border-radius: 0.5rem;
     background-color: #fff;
+    color: #000;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,6 +39,6 @@
 .timeSelectorBox{
     width: 100%;
     flex-grow: 1;
-    background-image: url( '../../public/icons/wave.svg');
+    background-image: url( '../../public/ui/wave.svg');
     height: 100%;
 }
