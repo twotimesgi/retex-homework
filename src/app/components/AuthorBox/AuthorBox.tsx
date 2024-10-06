@@ -8,6 +8,7 @@ interface AuthorBoxProps {
   alignment?: "horizontal" | "vertical";
   authorImage: StaticImageData;
   authorName: string;
+  textColor?: "white" | "black"
   date?: string;
   className?: string;
 }
@@ -16,11 +17,14 @@ function AuthorBox({
   alignment = "horizontal",
   authorImage,
   authorName,
+  textColor = "white",
   date,
   className
 }: AuthorBoxProps) {
   return (
-    <div className={classNames(
+    <div 
+        style={{color: textColor}}
+    className={classNames(
         styles.authorBox,
         className,
         {[styles.vertical]: alignment == "vertical"}

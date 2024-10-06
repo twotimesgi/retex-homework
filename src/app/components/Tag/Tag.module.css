@@ -23,3 +23,11 @@
     box-shadow: -2px 2px 0px 0px #000000;
     border: 1px solid #000000;
 }
+
+.tag:hover .text{
+    opacity: 50%;
+}
+
+.noHoverEffect:hover .text{
+    opacity: 100%;
+}
