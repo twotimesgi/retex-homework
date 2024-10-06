@@ -21,6 +21,7 @@ export default function Grid1() {
         authorImage={AuthorImage}
         date="14 Luglio 2022"
         alignment="bottom-left"
+        contentMinHeight="40%"
       />
       <Article
         className={styles.topRightArticle}
