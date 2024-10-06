@@ -1,5 +1,6 @@
 .authorImage{
     border-radius: 100%;
+    overflow: hidden;
 }
 
 .authorImage img{
