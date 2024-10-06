@@ -1,0 +1,23 @@
+.quote{
+    padding: 5.25rem 9.375rem 5.25rem 9.375rem;
+    background-image: url("../../public/ui/quotebg.png");
+    background-size: cover;
+    background-position: 60%;
+    color: #fff;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    position: relative;
+}
+
+.title::before{
+    content: url("../../public/ui/quote.svg");
+    position: absolute;
+    top: 3.25rem;
+    left: 4rem;
+}
+
+.author{
+    font-style: italic;
+    font-weight: 600;
+}

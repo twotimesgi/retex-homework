@@ -6,8 +6,8 @@ import Toggle from "../Toggle/Toggle";
 import Link from "next/link";
 import MenuIcon from "../../public/ui/menu.svg"
 import SearchIcon from "../../public/ui/search.svg"
-
 const Header = () => {
+    /* check active category */
   return (
     <header className={styles.header}>
       <div className={styles.top}>

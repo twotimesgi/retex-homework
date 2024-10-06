@@ -1,0 +1,8 @@
+.banner{
+    padding: 5.25rem 2.5rem 5.25rem 2.5rem;
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4F1DE;
+}
