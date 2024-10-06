@@ -23,7 +23,7 @@ export default function Grid3() {
         sponsored={true}
       />
       <Article
-        backgroundImage={ArticleImage2}
+        backgroundImage={ArticleImage1}
         title="Uccisa ad Haiti suor Luisa, era l'angelo dei bambini"
         titleSize="medium"
         category="PERSONE"
