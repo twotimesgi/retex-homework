@@ -17,12 +17,13 @@ type HEX = `#${string}`;
 type VAR = `var(--${string})`;
 
 interface ArticleProps {
-  backgroundColor?: RGB | RGBA | HEX | VAR | "transparent";
+  textColor?: RGB | RGBA | HEX | VAR;
+  backgroundColor?: RGB | RGBA | HEX | VAR;
   backgroundImage?: StaticImageData;
   authorName: string;
   authorImage: StaticImageData;
   title: string;
-  date: string;
+  date?: string;
   showCta?: boolean;
   minHeight?: string;
   category?: string;
@@ -39,6 +40,7 @@ interface ArticleProps {
 
 function Article({
   backgroundColor = "#ffffff",
+  textColor="#fff",
   categoryColor = "#fff",
   backgroundImage,
   sponsored = false,
@@ -86,17 +88,18 @@ function Article({
             </Tag>
           )}
           {hasAudio && <PodcastPlayer/>}
-          <Title size={titleSize} htmlTag="h3">
+          <Title size={titleSize} htmlTag="h3" textColor={textColor}>
             {title}
           </Title>
         </div>
         <div>
           <AuthorBox
+            textColor={textColor == "#fff" ? "white" : "black"}
             authorImage={authorImage}
             authorName={authorName}
             date={date}
           />
-          {showCta && <Cta href="#" />}
+          {showCta && <Cta textColor={textColor == "#fff" ? "white" : "black"} href="#" />}
         </div>
       </div>
       {backgroundImage && <div className={styles.filter}></div>}
