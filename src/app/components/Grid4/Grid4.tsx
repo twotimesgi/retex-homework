@@ -18,52 +18,59 @@ export default function ArticleGrid() {
         padding='medium'
           backgroundImage={ArticleImage1}
           title="Gli anziani del Sicomoro spopolano su TikTok"
-          titleSize="medium"
+          titleSize="small"
           category="INNOVAZIONE"
           categoryColor="#FFFFFF"
           authorName="Di Luigi Alfonso"
           authorImage={AuthorImage}
           date="1 Luglio 2022"
           alignment="bottom-left"
+          showCta={false}
+
         />
         <Article
                 padding='medium'
 
           backgroundImage={ArticleImage2}
           title="'Emergenza sordi': quando un'app ti salva la vita"
-          titleSize="medium"
+          titleSize="small"
           category="DISABILITÀ"
           categoryColor="#FFFFFF"
           authorName="Di Sara Bellingeri"
           authorImage={AuthorImage}
           date="1 Luglio 2022"
           alignment="bottom-left"
+          showCta={false}
+
         />
         <Article
                 padding='medium'
 
           backgroundImage={ArticleImage3}
           title="Diego, il fruttivendolo che ha scelto la cooperazione sociale"
-          titleSize="medium"
+          titleSize="small"
           category="TRAIETTORIE"
           categoryColor="#FFFFFF"
           authorName="Di Giampaolo Cerri"
           authorImage={AuthorImage}
           date="1 Luglio 2022"
           alignment="bottom-left"
+          showCta={false}
+
         />
         <Article
                 padding='medium'
 
           backgroundImage={ArticleImage4}
           title="Pedalare 'Sicily Coast to Coast' per essere più inclusivi"
-          titleSize="medium"
+          titleSize="small"
           category="SOCIALE"
           categoryColor="#FFFFFF"
           authorName="Di Giovanni Gamba"
           authorImage={AuthorImage}
           date="1 Luglio 2022"
           alignment="bottom-left"
+          showCta={false}
         />
       </div>
       <div className={styles.rightColumn}>
